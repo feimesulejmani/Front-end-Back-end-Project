@@ -1,0 +1,40 @@
+<!-- Typecasting -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi.</p>
+    </div>
+    <script>
+       //converting a type of value into another type is known as typecasting.
+        var quantity = prompt("enter quantity");
+       quantity = parseInt(quantity);
+
+       var price = prompt("enter price");
+       price = parseFloat(price);
+
+       document.write("Total price is "+(quantity*price)); 
+
+       var x = 2;
+       var y = "3b";
+       //var y = "a34"; //NAN , NOT ALLOWED TO TYPECASTE
+        y = parseInt(y);
+        console.log(x+y);
+
+        /* Functions are the basic building block of JavaScript.
+         Functions allow us to encapsulate a block of code and reuse it multiple times. 
+         Functions make JavaScript code more readable, organized, reusable, and maintainable.*/
+    </script>
+</body>
+
+
+</html>
+

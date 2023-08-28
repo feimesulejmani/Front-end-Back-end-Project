@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.2;
+
+}
+
+#logo {
+    margin: 7px 18px;
+}
+
+#logo img {
+    height: 71px;
+    width: 82px;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 10px 10px;
+}
+
+#navbar ul li {
+    display: flex;
+    margin: 10px 10px;
+    list-style: none;
+    font-size: 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-family: 'Balthazar', serif;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+#navbar ul li a:hover {
+
+    color: black;
+    background-color: orange;
+    font-weight: bold;
+}
+
+/*Styling for section */
+#home {
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid blue; */
+    height: 500px;
+    padding: 1px 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(/css/img/img7.jpg) no-repeat center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.7;
+}
+
+#home h2 {
+    font-family: 'Balthazar', serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: olive;
+
+
+}
+
+#home p {
+    color: white;
+    font-weight: 500;
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Balthazar', serif;
+}
+
+#home button {
+    color: orange;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 20px 10px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Balthazar', serif;
+    padding: 4px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+}
+
+#home button:hover {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+
+/* adding style to services */
+
+
+#services {
+    display: flex;
+    margin: 75px;
+
+}
+
+#services .box {
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 21px;
+    background-color: rgb(223, 230, 223);
+    margin: 2px 31px;
+
+
+}
+
+#services .box img {
+    height: 200px;
+    width: 350px;
+    display: block;
+    border: 15px;
+    margin: auto;
+}
+
+
+#servic-container h1 {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 30px;
+    margin-top: 120px;
+    font-family: 'Balthazar', serif;
+}
+
+#servic-container p {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 12px;
+    font-family: 'Balthazar', serif;
+}
+
+#servic-container button {
+    color: orange;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px 10px;
+    margin: 21px 95px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Balthazar', serif;
+    padding: 4px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+}
+
+#servic-container button:hover {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+
+#servic-container p {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 12px 12px;
+    font-family: 'Balthazar', serif;
+}
+
+ 
+
+
+.ct-footer {
+    background-color: #111;
+    padding-top: 70px;
+    margin-top: 20px;
+    position: relative;
+  }.ct-footer {
+    background-color: #111;
+    padding-top: 70px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+    .ct-footer-list {
+        padding: 50px 0;
+        list-style: none;
+        padding-left: 0;
+        display: table;
+        width: 100%;
+        border-bottom: 1px solid #555;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .ct-footer-list > li .ct-footer-list-header {
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: #00bff3;
+        font-size: 30px;
+      }
+      .ct-footer-list > li ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .ct-footer-list > li ul li a {
+        color: black;
+      }
+      .ct-footer-list > li ul li a:hover,
+      .ct-footer-post a:hover {
+        text-decoration: underline;
+      }
+      

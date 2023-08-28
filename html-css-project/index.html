@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineFood.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+           /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            opacity: 0.2;
+
+        }
+
+        #logo {
+            margin: 7px 18px;
+        }
+
+        #logo img {
+            height: 71px;
+            width: 82px;
+        }
+
+        #navbar ul {
+            display: flex;
+            margin: 10px 10px;
+        }
+
+        #navbar ul li {
+            display: flex;
+            margin: 10px 10px;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        #navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 12px;
+            border-radius: 10px;
+            font-family: 'Balthazar', serif;
+            font-size: 22px;
+            font-weight: 500;
+
+        }
+
+        #navbar ul li a:hover {
+
+            color: black;
+            background-color: orange;
+            font-weight: bold;
+        }
+
+        /*Styling for section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            /*border: 2px solid blue; */
+            height: 500px;
+            padding: 1px 160px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+            background: url(/html-css-project/img/img7.jpg) no-repeat center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -2;
+            opacity: 0.7;
+        }
+
+        #home h2 {
+            font-family: 'Balthazar', serif;
+            font-size: 50px;
+            text-align: center;
+            padding: 12px;
+            color: white;
+            text-decoration: olive;
+
+
+        }
+
+        #home p {
+            color: white;
+            font-weight: 500;
+            font-size: 23px;
+            text-align: center;
+            font-family: 'Balthazar', serif;
+        }
+
+        #home button {
+            color: orange;
+            font-weight: 500;
+            font-size: 25px;
+            margin: 20px 10px;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Balthazar', serif;
+            padding: 4px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+
+
+        }
+
+        #home button:hover {
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* adding style to services */
+     
+
+        #services {
+            display: flex;
+            margin: 34px;
+      
+        }
+
+        #services .box {
+            border: 2px solid grey;
+            padding: 25px;
+            border-radius: 21px;
+            background-color: rgb(223, 230, 223);
+            margin: 2px 31px;
+
+
+        }
+
+        #services .box img {
+            height: 200px;
+            width: 350px;
+            display: block;
+            margin: auto;
+        }
+        #servic-container h1 {
+            color: black;
+            font-size: 50px;
+            text-align: center;
+            padding: 20px 30px;
+            margin-top: 120px;
+            font-family: 'Balthazar', serif;
+        }
+        #servic-container h2 {
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px 30px;
+            font-family: 'Balthazar', serif;
+        }
+    </style>
+</head>
+<nav>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/html-css-project/img/img2.2.jpg" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a> </li>
+            <li class="item"><a href="#">Services</a> </li>
+            <li class="item"><a href="#">About Us</a> </li>
+            <li class="item"><a href="#">Contact Us</a> </li>
+
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2 class="h-primary">Welcome to OnlineFood.com</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, error vel dignissimos tempore animi voluptate
+            .</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, error vel dignissimos tempore animi
+            voluptate. </p>
+
+        <button id="btn"> Order Now</button>
+
+    </section>
+    <!--Services section-->
+    <section id="servic-container">
+        <h1 class="h-primary">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                
+                <img src="/html-css-project/img/img1.1.png" alt="">
+                <h2> Food Ordering </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, error vel dignissimos tempore animi
+                    voluptate. </p>
+            </div>
+            <div class="box">
+                
+                <img src="/html-css-project/img/img1.1.png" alt="">
+                <h2> Delivery at home  </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, error vel dignissimos tempore animi
+                    voluptate. </p>
+            </div>
+            <div class="box">
+                
+                <img src="/html-css-project/img/img1.1.png" alt="">
+                <h2> Take Away </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, error vel dignissimos tempore animi
+                    voluptate. </p>
+            </div>
+
+        </div>
+        
+    
+
+
+
+
+
+    </section>
+
+    </body>
+
+</html>

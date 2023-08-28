@@ -1,0 +1,68 @@
+<!-- type of function -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi.</p>
+    </div>
+    <script>
+        //1. function having no argument and no return type.
+        //2. function having no argument and having return type.
+        //3. function having argument and no return type.
+        //4. function having argument and having return type.
+
+
+
+
+        // 3. function having argument and no return type.
+        function add(a, b) {
+            console.log("sum is " + (a + b));
+        }
+        add(2, 3);
+        add(5, 7);
+        /*
+            returing a value from a function means result of function will return 
+            exactly on the function calling.
+        */
+
+        // return keyword is use to return result from function.
+        // 4. function having argument and having return type.
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        var result = multiply(5, 5);
+        console.log(result);
+
+        //1. function havin no argument and no return type.
+
+        function add() {
+            console.log("this is a Function")
+        }
+        add();
+
+        // 2 function having no argument and having return type.
+        var my_counter = 0;
+        function count() {
+            return ++my_counter;
+        }
+
+        console.log(count());
+        console.log(count());
+        console.log(count());
+        console.log(count());
+        console.log(count());
+        console.log(count());
+    </script>
+
+</body>
+
+</html>

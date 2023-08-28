@@ -1,0 +1,48 @@
+<!-- objects -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi.</p>
+    </div>
+    <script>
+        /*
+        NESTEED SWITCH CASE
+  */
+            var a = parseInt(prompt("enter the amount"));
+            var option = prompt("Press 1 for payment by card \nPress 2 for payment by cash");
+             
+              switch (option){
+                case "1" : {
+                    var innerOption = prompt("Press 1 for payment by debit card \nPress 2 for payment by cash");
+                    switch(innerOption){
+                        case "1" : document.write("Payment by debit card is completed.");
+                        break;
+                        case "2" : document.write("Payment by credit card is completed. ");
+                        break;
+                        default: document.write("NOT A VALID OPTION SELECTED");
+                    }
+                    break;
+
+                    
+
+                } 
+                case "2": document.write("Payment by cash is completed.");
+                break;
+                default: document.write("NOT A VALID OPTION SELECTED");
+
+            }
+
+   
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!-- var, let, const -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi.</p>
+    </div>
+    <script>
+        //    variable declear using var has function level scope.
+        //    variable declear using let has block level scope.
+
+        // case 1
+        function fun1() {
+            var x = 10;
+            console.log(x);
+
+            {
+                let y = 100;
+                console.log(y);
+            }
+            //    console.log(y);  // can not be access
+        }
+        // console.log(x);  //can not be access.
+        // fun1();
+
+        // case 2
+        function fun2() {
+            var x = 10;
+            console.log(x);
+
+            {
+                let y = 100;
+                console.log(y);
+                var z = 1000;
+            }
+            console.log(z);
+            
+        }
+        fun2();
+
+    </script>
+</body>
+
+</html>

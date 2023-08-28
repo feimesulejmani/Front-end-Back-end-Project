@@ -1,0 +1,48 @@
+header {
+
+    background-color: black;
+    color: beige;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5%;
+    background-position: bottom;
+}
+
+h1,
+h2 {
+
+    background-color: aqua;
+    color: black;
+    font-size: 130%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#first {
+
+    background-color: rgb(9, 110, 76);
+    color: black;
+    font-size: 100;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.second {
+    background-color: rgb(210, 55, 63);
+    color: black;
+    font-size: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left {
+    align-items: center;
+    position: absolute;
+    top: 500px;
+   background-color: skyblue;
+
+}
+
+.left img {
+    width: 300px;
+
+}

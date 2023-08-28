@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #div1 {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        Hello , <b>How are you ?</b>
+    </div>
+    <button id="btn1">Click Me</button>
+    <script src="./lib/jquery-3.6.4.min.js"></script>
+    <script>
+        $("#btn1").click(fun1);
+        function fun1(){
+        //1
+        //    $("#div1").html("<h2>Hi I am good </h2>");  // html(..) doesn't return any value.
+        //    var component = $("#div1").html();
+        // 2
+        $("#div1").text("Hi I am good.");
+        var component = $("#div1").text();
+        alert(component);
+        }
+    </script>
+</body>
+</html>

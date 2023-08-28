@@ -1,0 +1,30 @@
+<!-- append , prepend -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #div1 {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+       <p> Para 1</p>
+       <p> Para 2</p>
+       <p> Para 3</p>
+    </div>
+    <button id="btn1">Click Me</button>
+    <script src="./lib/jquery-3.6.4.min.js"></script>
+    <script>
+        $("#btn1").click(fun1);
+        function fun1(){
+        // $("#div1").prepend("<p>New Para</p>");
+        $("#div1").append("<p>New Para</p>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!-- var, let, const -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi.</p>
+    </div>
+    <script>
+        // case 3
+        function fun1() {
+            var x = 10;
+            console.log(x);
+
+            x = 20;
+            console.log(x);
+
+            var x = 30;   //cloning is allowed with var
+            console.log(x);
+        
+            {
+                let y = 100;
+                console.log(y);
+
+                // let y = 200; //cloning is not allowed
+                y = 200;
+                console.log(y);
+            }
+        }
+        // fun1();
+
+          // case 4
+          function fun2() {
+            
+            console.log(x);
+            var x = 10;
+
+            // accessing variable using let , before declearing it is not allowed.
+            console.log(y);
+            let y = 100;
+        }
+        
+        // fun2();
+        
+        function fun3() {
+            
+            const x = 100;
+            console.log(x);
+            // x = 200;  // you can not change const value.
+            
+        }
+        fun3();
+    </script>
+</body>
+
+</html>

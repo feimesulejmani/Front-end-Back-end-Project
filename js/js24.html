@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi.</p>
+    </div>
+    <script>
+        // every character has a unique decimal number that known as uni code.
+        // A-Z => 65 - 90
+        // A-Z => 97 - 122
+        // 0-9 => 48 - 57
+
+        // convert character to unicode
+        var char = "9";
+        var unicode = char.charCodeAt();
+        console.log(unicode);
+
+        // convert unicode to character 
+        var character = String.fromCharCode(1);
+        console.log(character)
+
+
+        var i ;
+        var allChar = "";
+        for(i=0;i<=256;i++){
+            allChar = allChar +  String.fromCharCode(i)+" ";
+        }
+        
+        console.log(allChar);
+    </script>
+</body>
+
+</html>
+

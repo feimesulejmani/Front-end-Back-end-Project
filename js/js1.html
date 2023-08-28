@@ -1,0 +1,37 @@
+<!-- takes input: credentials from url and validate them  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body onload="getParams()">
+  <div>
+    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+  </div>
+  <script>
+    function getParams(){
+      document.getElementById("p1").innerHTML = location.search;
+      var params = new URLSearchParams(location.search);
+      var username = params.get("username");
+      var password = params.get("password");
+      console.log(username);
+      console.log(password);
+      var response = validateUser(username,password);
+      console.log(response);
+    }
+    function validateUser(username,password){
+      if(username == "feime@gmail.com" && password == "123" )
+      return "Login successfull";
+      else 
+      return "credentials are incorrect";
+    }
+  </script>
+</body>
+
+</html>

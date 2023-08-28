@@ -1,0 +1,37 @@
+<!-- Event Handling -->
+<!-- 
+Change Event 
+1. text box
+2. radio button
+3. check box
+4. select
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body,input {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    Source Text : <input type="text" id="txt1"><br>
+    <p id="p1"></p>
+    <script src="./lib/jquery-3.6.4.min.js"></script>
+    <script>
+        $("#txt1").change(fun1);
+        function fun1(){
+        var value = $("#txt1").val();
+        $("#p1").text(value);
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, fugiat.</p>
+    <script>
+        /*If else if problems
+ Grade Calculator: Write a program that prompts the user to enter their numerical 
+ grade (0-100) and then outputs their letter grade (A, B, C, D, or F) based on the following grading scale:
+
+A: 90-100
+B: 80-89
+C: 70-79
+D: 60-69
+F: below 60
+
+Sample Input: 87
+Sample Output: B
+*/
+
+
+        let grade = prompt("Enter a number");
+        grade = parseInt(grade);
+
+
+
+        if (grade < 60) {
+            console.log(" F ");
+        } else if (grade < 70) {
+            console.log(" D ");
+        } else if (grade < 80) {
+            console.log(" C ");
+        } else if (grade < 90) {
+            console.log(" B ");
+        } else if (grade <= 100) {
+            console.log(" A ");
+        }
+        else {
+            console.log("That does not exist: ");
+        }
+    
+   
+
+    </script>
+        <script>
+            //Vowel or Consonant Checker: Write a program that prompts the user 
+     //to enter a letter and then determines whether it is a vowel or consonant or special character .
+     //// vovels - a, e, i, o, u
+     ///B, C, D, F, G, J, K, L, M, N, P, Q, S, T, V, X, Z
+
+     var character = prompt("Enter a Charachter");
+   
+      
+     if (character == "A" || character == "E" || character == "I" || character == "O" || character == "U") {
+         console.log("character is vovel");
+     }
+     else if (character == "B" || character == "C" || character == "D" || character == "F" || character == "G" 
+     || character == "J" || character == "K" || character == "L" || character == "M" || character == "N"){ 
+         console.log("character is consonent");
+
+     }
+     else
+        console.log("is special character ");
+ </script>
+
+</body>
+
+</html>

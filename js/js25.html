@@ -1,0 +1,40 @@
+<!-- first check entered character is number or alphabater
+    and if it is alphabate then check weather it is uppercase or lower case ? -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi.</p>
+        </div>
+        <script>
+            // every character has a unique decimal number that known as uni code.
+            // A-Z => 65 - 90
+            // A-Z => 97 - 122
+            // 0-9 => 48 - 57
+    
+        
+            // convert character to unicode
+            var char = prompt("Enter any character");
+            var unicode = char.charCodeAt();
+            if(unicode >= 48 && unicode <= 57)
+                console.log("Its a number");
+            else if(unicode >= 65 && unicode <= 90)
+                console.log("its a capital latter");
+            else if(unicode >= 97 && unicode <= 122)
+                console.log("its a small case latter");
+            else
+                console.log("its a symbol");
+        </script>
+    </body>
+    
+    </html>
+    

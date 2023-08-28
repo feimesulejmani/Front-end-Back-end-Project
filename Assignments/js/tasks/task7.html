@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, fugiat.</p>
+    <script>
+        /*Calculate the discount on a total purchase price.
+        if total price is greater then 100 then 1 percent discount on total amount and 
+        if less then 100 then 0.5 percent discount on total purchase. 
+        Price after discount = Original Price - (Original price × Discount %)*/
+
+        let price = prompt("Enter a number ");
+        price = parseInt(price);
+
+     
+        var discount = 10 / 100;
+        var discountt = 5/100;
+
+
+        if (price >= 100) {
+            console.log("Price after discount 1%: " +(price-(price*discount) ));
+        }
+        else if (price<= 100) {
+            console.log("Price after discount 0.5% : " +(price-(price*discountt) ));
+        }
+    
+        else {
+            console.log("The number dont exist ")
+        }
+    </script>
+</body>
+
+</html>
